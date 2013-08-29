@@ -1,17 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  type: 
-  start_time: 2013-08-29 17:12:31
-  duration: 2013-08-29 17:12:31
-  avg_pulse: 1.5
-  comment: MyString
+  comment: 
+  duration: 2013-08-29 20:39:34
+  start_time: 2013-08-29 20:39:34
   user: 
 
 two:
-  type: 
-  start_time: 2013-08-29 17:12:31
-  duration: 2013-08-29 17:12:31
-  avg_pulse: 1.5
-  comment: MyString
+  comment: 
+  duration: 2013-08-29 20:39:34
+  start_time: 2013-08-29 20:39:34
   user: 
