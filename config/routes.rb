@@ -1,4 +1,7 @@
 Missionimpossible::Application.routes.draw do
+
+  match "profile/:id" => "profile#index", :as => :profile
+
   get "goal/view"
 
   get "goal/create"

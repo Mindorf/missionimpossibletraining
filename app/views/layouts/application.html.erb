@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Missionimpossible</title>
+  <title>Mission Impossible Training</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<div class="container allcontent" style="width: 960px;">
+	<div class="row header">
+		<div class="span8">
+			<h1>
+				Mission Impossible Training
+			</h1>
+		</div>
+		<div class="span4">
+		</div>
+	</div>
+	<div class="maincontent">
+		<%= yield %>
+	</div>
+	<div class="row footer">
+		<p>&copy; 2013 <span class="niceguys">A Mindorf &amp; Haurum production</span></p>
+		<div class="span12">
+		</div>
+	</div>
+</div>
+<%= javascript_include_tag "retina" %>
 </body>
 </html>

@@ -1,1 +1,41 @@
 @import 'bootstrap';
+@import url(http://fonts.googleapis.com/css?family=Megrim);
+
+$semiblack: rgba(0, 0, 20, 0.7);
+$lgray: rgba(220, 220, 220, 1.0);
+$mgray: rgba(88, 88, 88, 1.0);
+$violet: rgba(89, 22, 195 ,1.0);
+
+.header{
+	background-color: $semiblack;
+	h1{
+		color: $lgray;
+		font-size: 2em;
+		font-family: 'Megrim', cursive;
+	}
+}
+.maincontent{
+	.row{
+		background-color: transparentize($semiblack, 0.55);
+		.usertitle{
+			border-bottom: 1px solid $semiblack;
+		}
+	}
+}
+.givemesomespace{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.footer{
+	padding-top: 10px;
+	p{
+		float: right;
+		color: #888;
+		span.niceguys{
+			color: $violet;
+		}
+	}
+}
+body{
+	background: image-url("bgpattern.png");
+}
