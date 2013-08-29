@@ -1,4 +1,22 @@
 Missionimpossible::Application.routes.draw do
+  get "goal/view"
+
+  get "goal/create"
+
+  get "goal/update"
+
+  get "workout/view"
+
+  get "workout/create"
+
+  get "workout/update"
+
+  get "profile/index"
+
+  get "profile/workouts"
+
+  get "profile/goals"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
