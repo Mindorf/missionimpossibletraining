@@ -7,8 +7,8 @@ one:
   email: 
   firstname: 
   lastname: 
-  password_hash,: MyString
-  : 
+  password_hash: 
+  password_salt: MyString
 
 two:
   username: MyString
@@ -17,5 +17,5 @@ two:
   email: 
   firstname: 
   lastname: 
-  password_hash,: MyString
-  : 
+  password_hash: 
+  password_salt: MyString
