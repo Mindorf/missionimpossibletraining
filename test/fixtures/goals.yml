@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  indicator: 
+  user: 
+  name: MyString
+  start_value: 
+  target_value: 1.5
+
+two:
+  indicator: 
+  user: 
+  name: MyString
+  start_value: 
+  target_value: 1.5

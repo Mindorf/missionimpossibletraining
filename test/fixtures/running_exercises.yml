@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  duration: 2013-08-29 20:45:29
+  distance: 1.5
+  avgpulse: 1.5
+  workout: 
+
+two:
+  duration: 2013-08-29 20:45:29
+  distance: 1.5
+  avgpulse: 1.5
+  workout: 

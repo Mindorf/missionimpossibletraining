@@ -1,0 +1,32 @@
+<div class="givemesomespace">
+	<div class="row">
+		<div class="span12 usertitle">
+			<h2>@<%= @user.username + unless @user.username.ends_with? "s" then "'s" else '' end %> profile</h2>
+		</div>
+	</div>
+	<div class="feats row">
+		<div class="span4 text-center givemesomespace">
+			<%= image_tag "sprintshoes.png" %>
+			<p>422 kilometres run</p>
+		</div>
+		<div class="span4 text-center givemesomespace">
+			<%= image_tag "lift.png" %>
+			<p>872 arm strecthes done</p>
+		</div>
+		<div class="span4 text-center givemesomespace">
+			<%= image_tag "stats.png" %>
+			<p>3.4 kg muscle gained</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span6 userinfo">
+		</div>
+		<div class="span6 userinfo">
+			<h4>About <%=@user.firstname%> <%=@user.lastname%></h4>
+			<p><b>Height: </b><%=@user.height%></p>
+			<p><b>Birthday: </b><%=@user.birthday%></p>
+			<p><b>Email: </b><%=@user.email%></p>
+			<h2>@<%= @user.username + unless @user.username.ends_with? "s" then "'s" else '' end %> profile</h2>
+		</div>
+	</div>
+</div>

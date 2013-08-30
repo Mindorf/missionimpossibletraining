@@ -1,0 +1,30 @@
+// Place all the styles related to the Profile controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$transblack: rgba(0, 0, 20, 0.2);
+$transblue: rgba(30, 40, 120, 0.5);
+
+@mixin rounded-corners($val)
+{
+  -moz-border-radius: $val;
+  -webkit-border-radius: $val;
+  border-radius: $val;
+}
+
+.feats{
+	div
+	{
+		background-color: $transblack;
+		p{
+			cursor: pointer;
+			color: #eee;
+			margin: 10px 10px 0px 10px;
+			padding: 10px 10px;
+			background-color: $transblue;
+			@include rounded-corners(5px);
+			&:hover{
+				background-color: transparentize($transblue,0.2);
+			}
+		}
+	}	
+}

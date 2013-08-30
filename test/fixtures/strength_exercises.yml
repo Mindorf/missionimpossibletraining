@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  sets: 1
+  reps: 1
+  pauseduration: 2013-08-29 20:46:01
+  workout: 
+
+two:
+  name: MyString
+  sets: 1
+  reps: 1
+  pauseduration: 2013-08-29 20:46:01
+  workout: 
