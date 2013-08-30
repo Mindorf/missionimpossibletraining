@@ -8,26 +8,7 @@
 </head>
 <body>
 <div class="container allcontent" style="width: 960px;">
-	<div class="row header">
-		<div class="span8">
-			<h1>
-				Mission Impossible Training
-			</h1>
-		</div>
-		<div class="span4">
-		  <ul class="nav nav-pills">
-		    
-        <% if current_user %>
-          <li><%= link_to current_user.username, profile_path(current_user) %></li>
-          <li><%= link_to "Log out", log_out_path %></li>
-        <% else %>
-          <li><%= link_to "Sign up", sign_up_path %></li>
-          <li><%= link_to "log in", log_in_path %></li>
-        <% end %>
-		  </ul>
-      
-		</div>
-	</div>
+  <%= render "layouts/header" %>
 	<div class="maincontent">
 	<br />
 	  <% flash.each do |name, msg| %>
@@ -35,11 +16,7 @@
     <% end %>
 		<%= yield %>
 	</div>
-	<div class="row footer">
-		<p>&copy; 2013 <span class="niceguys">A Mindorf &amp; Haurum production</span></p>
-		<div class="span12">
-		</div>
-	</div>
+  <%= render "layouts/footer" %>
 </div>
 <%= javascript_include_tag "retina" %>
 </body>
