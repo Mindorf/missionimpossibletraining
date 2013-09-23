@@ -1,0 +1,19 @@
+<div class="row"> 
+  <div class="span10">
+    <h1>Your workouts</h1>
+  </div>
+  <div class="span2 pull-right">
+    <%= link_to "Add a workout", new_workout_path %>
+  </div>
+</div>
+<div class="row">
+  <div class="span12">
+    <div class="workouts">
+      <% if @workouts %>
+        <% @workouts.each do |w| %>
+          <%= link_to "Workout at " + w.start_time.to_s, w %><br />
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div> 

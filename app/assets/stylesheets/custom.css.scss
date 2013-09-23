@@ -12,6 +12,12 @@ $violet: rgba(89, 22, 195 ,1.0);
 		color: $lgray;
 		font-size: 2em;
 		font-family: 'Megrim', cursive;
+		a {
+  		color: $lgray;
+		}
+		a:hover {
+  		text-decoration: none;
+		}
 	}
 }
 .maincontent{
@@ -38,4 +44,10 @@ $violet: rgba(89, 22, 195 ,1.0);
 }
 body{
 	background: image-url("bgpattern.png");
+}
+
+.workouts {
+  a {
+    color: inherit;
+  }
 }

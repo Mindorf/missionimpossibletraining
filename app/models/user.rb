@@ -2,6 +2,7 @@ require 'bcrypt'
 
 class User < ActiveRecord::Base
   attr_accessible :birthday, :email, :firstname, :height, :lastname, :password, :password_confirmation, :username
+  has_many :workouts
   
   before_save { |user| user.email = email.downcase }
   

@@ -6,20 +6,17 @@ Missionimpossible::Application.routes.draw do
   
   resources :users
   resources :sessions
-  root :to => "workout#view"
+  root :to => "workout#index"
   match "profile/:id" => "profile#index", :as => "profile"
 
+  resources :workout, :as => "workouts"
+  resources :run, :controller => "running_exercise"
+  
   get "goal/view"
 
   get "goal/create"
 
   get "goal/update"
-
-  get "workout/view"
-
-  get "workout/create"
-
-  get "workout/update"
 
   get "profile/index"
 

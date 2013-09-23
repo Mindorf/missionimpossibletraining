@@ -1,11 +1,11 @@
 <div class="row header">
   <div class="span8">
   	<h1>
-  		Mission Impossible Training
+  		<%= link_to "Mission Impossible Training", root_path %>
   	</h1>
   </div>
   <div class="span4">
-    <ul class="nav nav-pills">
+    <ul class="nav nav-pills pull-right">
       
       <% if current_user %>
         <li><%= link_to current_user.username, profile_path(current_user) %></li>

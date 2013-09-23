@@ -1,0 +1,9 @@
+List of all runs
+
+<% if @runs %>
+  <%= @runs.each do |run| %>
+    <%= run.distance %>
+  <% end %>    
+<% else %>
+  <p>There are no runs</p>
+<% end %>

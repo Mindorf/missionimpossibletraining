@@ -1,0 +1,19 @@
+<h1>Add a run</h1>
+
+<%= form_for :running_exercise, url: run_path do |f| %>
+  <p>
+    <%= f.label :distance %>
+    <%= f.text_field :distance %>
+  </p>
+  <p>
+    <%= f.label :duration %>
+    <%= f.text_field :duration %>
+  </p>
+  <p>
+    <%= f.label :avgpulse %>
+    <%= f.text_field :avgpulse %>
+  </p>
+  <p>
+    <%= f.submit "Add run", class: "btn" %>
+  </p>
+<% end %>
