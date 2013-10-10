@@ -11,6 +11,7 @@ Missionimpossible::Application.routes.draw do
 
   resources :workout, :as => "workouts"
   resources :run, :controller => "running_exercise"
+  resources :strength, :controller => 'strength_exercise'
   
   get "goal/view"
 

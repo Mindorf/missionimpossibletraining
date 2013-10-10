@@ -17,9 +17,10 @@ class RunningExerciseController < ApplicationController
   end
   
   def create
-    @workout = Workout.find(params[:workout_id])
-    @run = @workout.running_exercises.new(params[:running_exercises])
-    
+    @workout = Workout.find(params[:running_exercise][:workout_id])
+    params[:running_exercise].delete :workout_id
+    @run = @workout.running_exercises.new(params[:running_exercise])
+        
     if @run.save
       redirect_to @run.workout, notice: 'Your running exercise was successfully added to your workout'
     else

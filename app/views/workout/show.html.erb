@@ -3,10 +3,19 @@
     <h2>Workout at <%= @workout.start_time %></h2>
   </div>
   <div class="span6">
-    <p>Add running exercise</p>
+    <% if @workout.running_exercises %>
+      <% @workout.running_exercises.each do |run| %>
+        <p><%= link_to run.distance, run_path(run) %></p>
+      <% end %>
+    <% end %>
     <%= link_to "Add running exercise", new_run_path(workout_id: @workout.id) %>
   </div>
   <div class="span6">
-    <p>Add strength exercise</p>
+    <% if @workout.strength_exercises %>
+      <% @workout.strength_exercises.each do |stre| %>
+        <p><%= link_to stre.name, strength_path(stre) %></p>
+      <% end %>
+    <% end %>
+    <%= link_to "Add strength exercise", new_strength_path(workout_id: @workout.id) %>
   </div>
 </div>

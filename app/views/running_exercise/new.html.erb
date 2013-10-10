@@ -1,18 +1,20 @@
 <h1>Add a run</h1>
 
-<%= form_for :running_exercise, url: run_path do |f| %>
+<%= form_for @run, url: { action: "create" } do |f| %>
   <p>
     <%= f.label :distance %>
+    <%= f.number_field :distance %>
     <%= f.text_field :distance %>
   </p>
   <p>
     <%= f.label :duration %>
-    <%= f.text_field :duration %>
+    <%= f.number_field :duration %>
   </p>
   <p>
     <%= f.label :avgpulse %>
-    <%= f.text_field :avgpulse %>
+    <%= f.number_field :avgpulse %>
   </p>
+  <%= f.hidden_field :workout_id %>
   <p>
     <%= f.submit "Add run", class: "btn" %>
   </p>
